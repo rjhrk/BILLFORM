@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition'
+define service ZBILLING_FORM_SRV {
+  expose ZC_BILLING_HEADER;
+  expose ZC_SUMMARY;
+  expose ZC_BILLING_ITEM;
+}

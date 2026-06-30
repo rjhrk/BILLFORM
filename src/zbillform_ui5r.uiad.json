@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "{{appDescription}}",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Billing Form Preview"
+  },
+  "ui5AppDetails": {
+    "appId": "billformdisplay"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_6654AA0ABB8F1DCDCE58430DF401BEDF20D763A5_TM",
+    "semanticObject": "zbillformdisplay",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_6654AA0ABB8F1DCDCE58430DF401BEDF20D763A5_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Billing Form Preview"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+unmanaged implementation in class zbp_i_billing_header unique;
+//strict ( 2 );
+
+define behavior for ZI_Billing_Header //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) BillingDocument;
+  //  association _Item { create; }
+  action Submit;
+}
+
+//define behavior for ZI_ITEM_BILLING //alias <alias_name>
+////late numbering
+//lock dependent by _Header
+//authorization dependent by _Header
+////etag master <field_name>
+//{
+//  update;
+//  delete;
+//  field ( readonly ) BillingDocument;
+//  association _Header;
+//}
